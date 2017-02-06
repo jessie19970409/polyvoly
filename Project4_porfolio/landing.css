@@ -1,0 +1,419 @@
+
+      body{
+        font-family: 'Hind Vadodara', sans-serif;
+        overflow: auto;
+        display: flex;
+        flex-direction: column;
+          }
+
+       h1,h3{
+      font-family:"IM Fell English SC";
+      font-size: 19px;
+          }
+     
+      h3{
+      	padding-top: 5%;
+      	padding-bottom: 0.5%;
+      }
+
+      ul{
+     	list-style: none;
+     	text-shadow: 0.5px 0.5px rgba(158, 158, 158,0.5);
+     }
+
+
+     li{
+     	font-size: 20px;
+     }
+
+    div.navigation{
+	     background-color: #fff;  
+	     color: #c0c5ce;
+        z-index:10;
+    	  position: fixed;
+    	display: block;
+        width:100%;
+    	min-height: 60px;
+    	background-color: rgba(61, 65, 71,0.8);
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    }
+     
+     div.navigation ul li{
+     	 margin-top: 1%;
+	     float: right;
+	     padding-right: 5%;
+	   }
+
+
+     div.navigation ul li a{
+         font-size: 17px;
+         display:block;
+         text-decoration: none;
+         text-align: center;
+         color: #c0c5ce;
+      }
+
+      .navigation:hover {
+        background-color: rgba(61, 65, 71,0.9);
+        }
+
+     div.navigation ul li a:hover{
+      font-size: 18px; 
+        color: white;
+     }
+
+     /*navigation bar for mobile device*/
+
+     div.togglemenu{
+     	z-index: 10;
+     	display: none;
+     	color: white;
+     	background-color:rgba(61, 65, 71,0.8);
+     	width: 45px;
+     	text-align: center;
+     	position: fixed;
+     	cursor: pointer;
+     	box-shadow: 0px 6px 14px 0px rgba(0,0,0,0.2);
+     }
+
+     .togglemenu i{
+     	font-size: 23px;
+     	padding:3px;
+     }
+
+     div.navigationmobile{
+     	z-index: 9;
+     	display:none;
+     	width: 250px;
+     	position: fixed;
+	    text-align: center;
+        background-color:rgba(61, 65, 71,0.8);
+        box-shadow: 0px 6px 14px 0px rgba(0,0,0,0.2);
+     }
+
+     div.navigationmobile ul li a{
+      display: none;
+      font-size: 13px;
+      text-decoration:none;
+      color: white;
+      display: block;
+      text-align: left;
+      padding: 2%;
+      padding-left: 7%;
+     }
+
+      div.navwrap{
+  	    display: none;}
+     
+     /*end of the mobile menu */
+
+    /*the motifs for each page */
+
+    #motif{
+      display: block;
+      margin-left: auto;
+      margin-right: auto; /*centered */
+      height: 525px;
+      margin-top: 5px;
+      filter: drop-shadow(4px 4px 5px rgba(0,0,0,0.5));
+    }
+
+
+   div.coverimage{
+    	overflow: hidden;
+    	display: block;
+    	min-width: 100%;
+    	height: 540px;
+    	background: url("coverimage.jpg") no-repeat;
+    	background-size:cover;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    }
+
+    /* different coverimages */
+
+    div.narrativecoverimage{
+      overflow: auto;
+      display: block;
+      min-width: 100%;
+      height: 540px;
+      background: url("narrativeheader.jpg") no-repeat;
+      background-size:cover;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    }
+
+    div.beastcoverimage{
+       overflow: auto;
+      display: block;
+      min-width: 100%;
+      height: 540px;
+      background: url("beastcover2.jpg") no-repeat;
+      background-size:cover;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    }
+
+    #clear{
+      margin-top: 4%;
+      clear: both;
+    }
+
+    #link{
+      text-decoration: none;
+      color:rgb(149, 176, 219);
+    }
+
+/* img in the boxes */
+    img{
+    	height: 480px;
+    }
+
+    .box { margin-left: 2.5%;
+    	  margin-top: 5%;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          float:left;
+          overflow: hidden; 
+          width: 22%;
+          height: 350px;
+          text-align: center;
+          vertical-align: middle;
+        }
+
+     div.box:hover{
+      transform: scale(1.02);
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
+    }   
+
+/*comment on the gallery page, shown by toggle button*/ 
+    div.text{
+      clear: both;
+      display: block;
+      padding: 2% 17% 0% 14%;
+      text-decoration: none;
+      font-size: 14px;
+      color: rgb(56, 56, 56);
+      line-height: 170%;
+    }
+
+   .text p{
+    	display: none;
+    }
+/*end of the comment on the gallery page*/ 
+
+
+/*The about page css set up*/ 
+    div.columns{
+      clear: both;
+      display: block;
+      padding: 2% 2% 0% 14%;
+      text-decoration: none;
+      font-size: 14px;
+      color: rgb(56, 56, 56);
+      line-height: 170%;
+    }
+   
+    div.introduction{
+      float: left;
+      width: 33%;
+      
+    }
+
+  div.education{
+    margin-left: 6%;
+    float: left;
+    width: 33%;
+  }
+
+  /* toggle button setup */
+
+    .togglebutton{
+    	text-align: center;
+    	border: 1px solid #ccc;
+    	padding: 15px;
+    	cursor :pointer;
+    	box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
+    }
+
+
+    div.footer{
+      color: rgba(0,0,0,0.4);
+      font-size: 77%;
+      text-align: center;
+      padding-top: 3%;
+    }
+    
+/* timeline container*/
+   .container {
+  width: 100%;
+  text-align: center;
+}
+  
+  .timeline {
+  	display: none;
+    padding-bottom: 20px;
+  }
+
+  .timeline ul li {
+  list-style-type: none;
+  width: 6px;
+  margin: 0 auto;
+  padding-top: 50px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.timeline ul li div {
+  font-size: 14px;
+  position: relative;
+  width: 400px;
+  padding: 15px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.timeline ul li:nth-child(odd) div:before {
+   content:"";
+   position: absolute;
+   right: 100%;
+   top: 93%;
+   border-top: 13px solid transparent;
+   border-left: 26px solid rgb(149, 176, 219);
+   border-bottom: 13px solid transparent;
+}
+
+.timeline ul li:nth-child(even) div:before {
+   content:"";
+   position: absolute;
+   left: 100%;
+   top: 93%;
+   border-top: 13px solid transparent;
+   border-right: 26px solid rgb(90, 90, 90);
+   border-bottom: 13px solid transparent;
+}
+
+
+ .timeline ul li:nth-child(even) div {
+  left: -450px;
+}
+
+ .timeline ul li:nth-child(odd) div {
+  left: 26px;
+}
+
+   /*end of the about page css set up*/ 
+
+    @media screen and (max-width: 1024px) {
+     div.navigation ul li a{
+     	font-size: 13px;
+     }
+ div.navigation ul li a:hover{
+ 	    font-size: 13.5px;
+     }
+
+    img{
+    	height: 380px;
+    }
+
+    .box { 
+          height: 210px;
+        }
+
+    #motif{
+      height: 300px;
+    }
+
+    div.coverimage,div.narrativecoverimage,div.beastcoverimage{
+          height: 300px;
+        }
+      h3{
+        font-size: 16px;
+      }
+   
+     .timeline ul li div {
+    width: 230px;
+  }
+  .timeline ul li:nth-child(even) div {
+    left: -279px; 
+  }
+  div.introduction, div.education{
+    width: 100%;
+    margin: 0;
+   }
+
+ div.columns{
+   padding: 1% 1% 0% 8%;
+ }
+ h3{
+  font-size: 16px;
+ }
+ .timeline ul li div {
+    font-size: 13px;
+  }
+
+  div.togglemenu{
+    display: none;
+  }
+
+  div.navwrap{
+  	display: none;
+  }
+    }
+
+
+    @media screen and (max-width: 500px) {
+        div.coverimage,div.narrativecoverimage,div.beastcoverimage{
+          height: 220px;
+        }
+        button{
+          font-size: 8px;
+        }
+        div.text{
+      font-size:8px;
+    }
+
+     img{
+    	height: 280px;
+    }
+
+    .box {
+    	  margin-left: 6%;
+          width: 40%;
+          height: 150px;
+      }
+
+      #motif{
+      height: 225px;
+      margin-top: 0px;
+    }
+
+    .timeline ul li div {
+    width: 100px;
+  }
+  .timeline ul li:nth-child(even) div {
+    left: -148px; 
+  }
+  *{
+    line-height: 110%;
+    font-size: 8px;
+  }
+  .timeline ul li div {
+    font-size: 9px;
+  }
+
+  div.introduction, div.education{
+  	width: 100%;
+  	margin: 0;
+  }
+
+    /* breakpoint meanu for mobil screen */
+	     div.navigation{
+	    	display: none;
+	    }
+
+	    div.togglemenu{
+	     	display: block;
+	     }
+
+	      div.navwrap{
+  	    display: block;
+  }
+
+    }
+   
+  

@@ -1,0 +1,107 @@
+
+     body{
+        font-family: 'Hind Vadodara', sans-serif;
+        overflow: auto;
+        display: flex;
+        flex-direction: column;
+          }
+
+       h1{
+      font-family:"IM Fell English SC";
+          }
+     
+      ul{
+      list-style: none;
+      text-shadow: 0.5px 0.5px rgba(158, 158, 158,0.5);
+          }
+
+
+     li{
+      font-size: 20px;
+     }
+
+
+    div.navigation{
+       background-color: #fff;  
+       color: #c0c5ce;
+        z-index:10;
+        position: fixed;
+      display: block;
+        width:100%;
+      min-height: 60px;
+      background-color: rgba(61, 65, 71,0.8);
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    }
+     
+     div.navigation ul li{
+       margin-top: 1%;
+       float: right;
+       padding-right: 5%;
+     }
+
+
+     div.navigation ul li a{
+         font-size: 17px;
+         display:block;
+         text-decoration: none;
+         text-align: center;
+         color: #c0c5ce;
+      }
+
+      .navigation:hover {
+        background-color: rgba(61, 65, 71,0.9);
+        }
+
+     div.navigation ul li a:hover{
+      font-size: 18px; 
+        color: white;
+     }
+
+
+
+   div.coverimage{
+      overflow: auto;
+      display: block;
+      min-width: 100%;
+      height: 540px;
+      background: url("narrativeheader.jpg") no-repeat;
+      background-size:cover;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    }
+
+   .box { margin-left: 2%;
+           margin-top: 5%;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          float:left;
+          overflow: hidden; 
+          width: 22%;
+          height: 350px;
+          text-align: center;
+          vertical-align: middle;
+        }
+
+
+    img {
+      height: 480px;
+        }
+
+    div.box:hover{
+      transform: scale(1.02);
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.4);
+    }   
+
+    div.footer{
+      color: rgba(0,0,0,0.4);
+      font-size: 77%;
+      padding: 40px;
+      text-align: center;
+      width: 100%;
+    }
+
+    div.footer a{
+      text-decoration: none;
+      color:rgb(149, 176, 219);
+    }
+   
+
+
